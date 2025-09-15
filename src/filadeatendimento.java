@@ -4,12 +4,10 @@ package clinicamanager;
 import java.util.Stack;
 
 /**
- * Gerencia o histórico de pacientes já atendidos, utilizando uma Stack.
- * Segue o princípio LIFO (Last-In, First-Out).
  */
 public class PilhaHistoricoAtendimentos {
 
-    // Utiliza a classe Stack para armazenar o histórico.
+    
     private Stack<Paciente> historico;
 
     public PilhaHistoricoAtendimentos() {
@@ -17,16 +15,14 @@ public class PilhaHistoricoAtendimentos {
     }
 
     /**
-     * Adiciona um paciente atendido ao topo da pilha de histórico.
-     * @param p O paciente que foi atendido.
+ 
      */
     public void adicionarAoHistorico(Paciente p) {
         historico.push(p);
     }
 
     /**
-     * Retorna o último paciente atendido (o que está no topo da pilha) sem removê-lo.
-     * @return O último paciente atendido ou null se o histórico estiver vazio.
+
      */
     public Paciente verUltimoAtendido() {
         if (!historico.isEmpty()) {
@@ -36,8 +32,7 @@ public class PilhaHistoricoAtendimentos {
     }
 
     /**
-     * Imprime no console o histórico de atendimentos, do mais recente para o mais antigo.
-     * A iteração é feita com um laço for tradicional, conforme requisito.
+
      */
     public void mostrarHistorico() {
         System.out.println("\n--- Histórico de Atendimentos (do mais recente ao mais antigo) ---");
